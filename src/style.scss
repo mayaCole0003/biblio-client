@@ -1,0 +1,232 @@
+html, body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(255, 255, 255);
+  height: 100%; 
+  margin: 0;   
+}
+#root, .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ECF0FE;
+  z-index: 1000;
+  padding: 2vh;
+  height: 8vh;
+  width: 100vw;
+}
+.brand-header{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  color: #4C6EF5;
+}
+.logo {
+  width: 30px;
+  margin-right: 10px;
+  color: #3F6BB4;
+}
+.menu-items{
+  margin-right: 20px;
+}
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+.navbar li {
+  display: inline-block;
+}
+.navbar li a {
+  display: block;
+  color: #4C6EF5;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background-color: #DBE4FF;
+  border-radius: 8px;
+}
+.profile{
+  background-color: #F8F9FA;
+  height: 84vh;
+  padding: 10px 10px;
+  display: flex;
+}
+.left-dash{
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  padding: 10px 10px;
+  margin-right: 10px;
+}
+.center-dash{
+  width: 80%;
+  border-radius: 20px;
+  margin-right: 0px;
+  background-color: white;
+  border-radius: 20px;
+  height: 100%;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.center-dash-header{
+  display: flex;
+  justify-content: space-between;
+}
+.center-botton-dash{
+  background-color: white;
+  border-radius: 20px;
+  height: 44%;
+  padding: 10px 20px;
+}
+.right-dash{
+  background-color: white;
+  border-radius: 20px;
+  width: 25%;
+  height: 100%;
+  padding: 10px 20px;
+}
+.foot {
+  position: relative;
+  background-color: #ECF0FE;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh;
+  flex-shrink: 0;
+  height: 8vh;
+}
+.foot ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+.foot li {
+  display: inline-block;
+}
+.foot li a {
+  display: block;
+  color: #4C6EF5;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.small-brand-header {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: #4C6EF5;
+  font-size: 30px;
+  padding: 0 30px;
+}
+.small-logo {
+  width: 30px;
+  margin-right: 7px;
+}
+main {
+  flex-grow: 1; 
+  overflow: auto;
+}
+.faq-title{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 4hv;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4C6EF5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.accordion-item:hover {
+  background-color: #d0d0d0;
+  cursor: pointer;
+}
+.how-it-works-title{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 4hv;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4C6EF5;
+  padding-top: 50px;
+}
+.library-card-holder {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 150px)); 
+  gap: 50px; 
+  padding: 30px 6px;
+  justify-content: center; 
+}
+
+.wishlist-icon, .delete-icon {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.wishlist-icon {
+  color: initial; /* default color */
+}
+
+.wishlist-icon:hover {
+  color: red;
+}
+
+.delete-icon:hover {
+  color: gray;
+}
+
+.wishlist-icon.active {
+  color: red;
+}
+.offer-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px solid #e0e0e0;
+  max-width: 400px;
+  min-width: 200px;
+}
+.offer-header {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+.offer-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+.lib-card-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: start; 
+  flex-wrap: wrap; 
+}
+.highlight {
+  color: #4C6EF5; 
+}
